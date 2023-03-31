@@ -1,0 +1,18 @@
+<div fxLayoutAlign="center center" fxFlexFill>
+    <mat-card fxFlex="25">
+        
+        <form fxLayoutAlign="strech" fxLayout="column">
+            <mat-form-field >
+              <input matInput type="text" placeholder="UserName" #username>
+            </mat-form-field>
+          
+            <mat-form-field>
+                <input matInput type="password" placeholder="Password" #password>
+              </mat-form-field>
+              <button color="primary" mat-raised-button type="submit" (click)="OnLogin(username.value,password.value)">LOGIN</button>
+              <!-- <a routerLink="/home" routerLinkActive="active">Login Here</a> -->
+          </form>   
+    </mat-card>
+
+
+<!-- (click)="OnLogin(username.value,password.value) -->
